@@ -18,11 +18,11 @@ Agora que reunimos os conceitos principais necessários, sabemos que um Webservi
 
 [2] [https://www.redhat.com/pt-br/topics/api/what-is-a-rest-api](https://www.redhat.com/pt-br/topics/api/what-is-a-rest-api)
 
-**### Contexto da aplicação**
+### Contexto da aplicação
 
 Nossa aplicação representará um contexto de banca digital de quadrinhos (Commics). Vamos listar quais seriam as etapas e os requisitos base para esse tipo de aplicação:
 
-#### **Primeira etapa da aplicação:**
+#### Primeira etapa da aplicação:
 
  Construção de um cadastro de usuários, para esse cadastro, os seguintes requisitos devem ser respeitados:
 
@@ -42,7 +42,7 @@ Nossa aplicação representará um contexto de banca digital de quadrinhos (Comm
     - O e-mail deve ser único (apenas um usuário cadastrado pode possuir um determinado endereço e-mail)
     - CPF deve ser único (apenas um usuário cadastrado pode possuir um determinado CPF)
 
-#### **Segunda etapa da aplicação:**
+#### Segunda etapa da aplicação:
 
 Construção de um cadastro de quadrinhos (Comics) para um determinado usuário. Para este requisito, deve-se consumir a API da MARVEL (disponível em [https://developer.marvel.com/](https://developer.marvel.com/)) para buscar os dados de um determinado quadrinho, baseado no comicId informado no momento do cadastro. Para este cadastro, os seguintes requisitos devem ser respeitados:
 
@@ -61,9 +61,13 @@ Construção de um cadastro de quadrinhos (Comics) para um determinado usuário.
     - O ISBN é obrigatório
     - O ISBN deve ser único (apenas um Comic cadastrado pode possuir um determinado ISBN)
 
-#### **Terceira etapa da aplicação:**
+#### Terceira etapa da aplicação:
 
-Construção de uma consulta da lista de usuários cadastrados na aplicação. Para essa consulta, não deve ser retornada a lista de quadrinhos de cada usuário. A **quarta etapa** do desafio é a construção de uma consulta da lista de quadrinhos de um determinado Usuário. Para essa listagem, devemos obedecer algumas regras de negócio da nossa aplicação:
+Construção de uma consulta da lista de usuários cadastrados na aplicação. Para essa consulta, não deve ser retornada a lista de quadrinhos de cada usuário. 
+ 
+#### Quarta  etapa da aplicação:
+
+Construção de uma consulta da lista de quadrinhos de um determinado Usuário. Para essa listagem, devemos obedecer algumas regras de negócio da nossa aplicação:
 
 - Cada quadrinho possui um desconto de 10% que pode ser aplicado ao seu preço de acordo com o dia da semana em que a consulta está sendo realizada.
 - O dia da semana que corresponde a aplicação do desconto varia de acordo com o dígito final do ISBN, conforme abaixo:
@@ -79,21 +83,21 @@ Construção de uma consulta da lista de usuários cadastrados na aplicação. P
 - Caso os cadastros estejam corretos, é necessário retornar o HTTP Status Code 201. Caso haja erros de preenchimento de dados, o HTTP Status Code retornado deve ser 400 e deve ser apresentada uma mensagem indicando qual campo foi preenchido incorretamente.
 - Caso as buscas estejam corretas, é necessário retornar o HTTP Status Code 200. Caso haja erro na busca, retornar o status adequado (atenção a erros do cliente ou do servidor) e uma mensagem de erro amigável.
 
-**### Hands on**
+### Hands on
 
 Agora que temos o contexto da nossa aplicação o primeiro passo para a construção da API será escolher quais as tecnologias e ferramentas iremos utilizar, nesse projeto escolhemos as seguintes ferramentas:
 
-- Java:
-- Springbot [3]:  O Spring Boot é um framework Java open source que tem como objetivo facilitar esse processo em aplicações Java. Consequentemente, ele traz mais agilidade para o processo de desenvolvimento, uma vez que devs conseguem reduzir o tempo gasto com as configurações iniciais.
-- Hibernate [4] : O Hibernate é um projeto open-source fundado por Gavin King e segue os passos do Spring em popularidade, conseguindo se tornar um dos frameworks mais usados para persistência de dados. A ideia deste framework é transformar o acesso a dados, em um banco de dados relacional, mais simples através da manipulação de objetos Java, deixando de lado as instruções SQL empregadas em operações de CRUD. O Hibernate possui uma rica documentação de introdução sobre como usá-lo disponível em vários idiomas, incluindo o Português. Atualmente, ele é encontrado na versão estável 3.6.8-Final, embora já haja a versão 4, ainda não considerada uma versão estável. Um dos fatores positivos do Spring Framework é a facilidade de integração entre ele e outros **frameworks Java, como o próprio Hibernate.**
+- Java [3]: O Java é uma linguagem de programação orientada a objetos e é uma das linguagens mais utilizadas pelas empresas na atualidade no desenvolvimento de aplicações WEB e Mobile. O Java foi criado em 1995 na empresa Sun Microsystem por uma equipe chefiada por James Gosling, conhecido como o pai do Java. Em 2008, o Java foi adquirido pela Oracle e vem crescendo bastante desde então no mercado de tecnologia
+- Springbot [4]:  O Spring Boot é um framework Java open source que tem como objetivo facilitar esse processo em aplicações Java. Consequentemente, ele traz mais agilidade para o processo de desenvolvimento, uma vez que devs conseguem reduzir o tempo gasto com as configurações iniciais.
+- Hibernate [5] : O Hibernate é um projeto open-source fundado por Gavin King e segue os passos do Spring em popularidade, conseguindo se tornar um dos frameworks mais usados para persistência de dados. A ideia deste framework é transformar o acesso a dados, em um banco de dados relacional, mais simples através da manipulação de objetos Java, deixando de lado as instruções SQL empregadas em operações de CRUD. O Hibernate possui uma rica documentação de introdução sobre como usá-lo disponível em vários idiomas, incluindo o Português. Atualmente, ele é encontrado na versão estável 3.6.8-Final, embora já haja a versão 4, ainda não considerada uma versão estável. Um dos fatores positivos do Spring Framework é a facilidade de integração entre ele e outros **frameworks Java, como o próprio Hibernate.**
 
 Percebam que é importante verificar a compatibilidade e a disponibilidade das tecnologias que serão usadas no projeto, no nosso projeto em questão adotamos apenas ferramentas open source e que possuem compatibilidade entre si,  nesse temos a garantia de um desenvolvimento com poucos problemas no processo de integração. 
 
-[3] [https://www.zup.com.br/blog/spring-boot](https://www.zup.com.br/blog/spring-boot)
+[3] [https://www.zup.com.br/blog/java](https://www.zup.com.br/blog/java)
 
-[4] [https://www.devmedia.com.br/como-integrar-os-frameworks-spring-e-hibernate/23414](https://www.devmedia.com.br/como-integrar-os-frameworks-spring-e-hibernate/23414)
+[4] [https://www.zup.com.br/blog/spring-boot](https://www.zup.com.br/blog/spring-boot)
 
-
+[5] [https://www.devmedia.com.br/como-integrar-os-frameworks-spring-e-hibernate/23414](https://www.devmedia.com.br/como-integrar-os-frameworks-spring-e-hibernate/23414)
 
 You can use the [editor on GitHub](https://github.com/jcarloslimaufc/VUP-challenge/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files. Test.
 
