@@ -1,4 +1,4 @@
-## Introdução e conceitos iniciais.
+## Introdução e conceitos iniciais
 
 Olá pessoal, sabemos que com a evolução da internet os serviços e aplicações online também evoluíram no sentido de se tornarem mais escaláveis e acessíveis, a comunicação entre serviços e sistemas web foi se tornando cada vez mais uma necessidade para o desenvolvimento de novas aplicações.
 
@@ -17,6 +17,12 @@ Agora que reunimos os conceitos principais necessários, sabemos que um Webservi
 [1] [https://cursos.alura.com.br/forum/topico-qual-a-diferenca-entre-web-services-e-api-55330](https://cursos.alura.com.br/forum/topico-qual-a-diferenca-entre-web-services-e-api-55330)
 
 [2] [https://www.redhat.com/pt-br/topics/api/what-is-a-rest-api](https://www.redhat.com/pt-br/topics/api/what-is-a-rest-api)
+
+<p align="center">
+  <img src="your_relative_path_here" width="350" title="hover text">
+  <img src="your_relative_path_here_number_2_large_name" width="350" alt="accessibility text">
+</p>
+
 
 ### Contexto da aplicação
 
