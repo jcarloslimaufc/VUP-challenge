@@ -19,8 +19,7 @@ Agora que reunimos os conceitos principais necessários, sabemos que um Webservi
 [2] [https://www.redhat.com/pt-br/topics/api/what-is-a-rest-api](https://www.redhat.com/pt-br/topics/api/what-is-a-rest-api)
 
 <p align="center">
-  <img src="https://github.com/jcarloslimaufc/VUP-challenge/blob/gh-pages/images/rest-api-la-gi.jpg" width="350" title="hover text">
-  <img src="https://github.com/jcarloslimaufc/VUP-challenge/blob/gh-pages/images/rest-api-la-gi.jpg" width="350" alt="accessibility text">
+  <img src="https://github.com/jcarloslimaufc/VUP-challenge/blob/gh-pages/images/rest-api-la-gi.jpg?raw=true" width="350" title="REST API">
 </p>
 
 
