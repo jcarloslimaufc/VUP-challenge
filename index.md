@@ -1,7 +1,7 @@
-## Welcome to GitHub Pages
+## Introduçaõ e conceitos iniais.
 
 
-Olá pessoal, sabemos que com a evolução da internet os serviços e aplicações online também evoluíram no sentido de se tornarem mais escaláveis e acessíveis, a comunicação entre serviços e sistemas web foi se tornando cada vez mais uma necessidade para o desenvolvimento de novas ampliações.
+Olá pessoal, sabemos que com a evolução da internet os serviços e aplicações online também evoluíram no sentido de se tornarem mais escaláveis e acessíveis, a comunicação entre serviços e sistemas web foi se tornando cada vez mais uma necessidade para o desenvolvimento de novas aplicações.
 
 Então vamos entender como podemos implementar um sistemas baseado nesses novos padrões de comunicação para serviços web. Nesse artigo vamos entender como poderíamos criar uma API baseada no padrão REST. 
 
@@ -21,6 +21,9 @@ Quando um cliente faz uma solicitação usando uma API RESTful, essa API transfe
 [2] [https://www.redhat.com/pt-br/topics/api/what-is-a-rest-api](https://www.redhat.com/pt-br/topics/api/what-is-a-rest-api)
 
 Agora que reunimos os conceitos principais necessários, sabemos que um Webservice se trata de uma API que pode usar meios de comunicação e protocolos web para implementar seus serviços. Nosso objeto então é usar a Arquitetura REST para construção dessa API.
+
+### Contexto da aplicação
+
 
 
 You can use the [editor on GitHub](https://github.com/jcarloslimaufc/VUP-challenge/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files. Test.
