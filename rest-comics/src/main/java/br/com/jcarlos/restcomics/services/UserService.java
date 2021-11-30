@@ -15,6 +15,14 @@ public class UserService {
     public User findById(String id){
         User user = new User();
         user.setId(counter.incrementAndGet());
+        user.setNome("João");
+        user.setEmail("analista.jcarloslima@gmail.com");
+        user.setCpf("000.000.000.00");
+        user.setDataNAscimento("16/02/1993");
+
+
+
+
         return user;
 
     }
