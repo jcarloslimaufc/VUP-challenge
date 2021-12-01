@@ -90,53 +90,6 @@ Construção de uma consulta da lista de quadrinhos de um determinado Usuário. 
 
 ### Hands on
 
-Agora que temos o contexto da nossa aplicação o primeiro passo para a construção da API será escolher quais as tecnologias e ferramentas iremos utilizar, nesse projeto escolhemos as seguintes ferramentas:
+Na própxima página será exibido o desenvolvimento da aplicação, abordando os princiapis aspectos para o desenvolvimento de uma API REST
 
-- Java [3]: O Java é uma linguagem de programação orientada a objetos e é uma das linguagens mais utilizadas pelas empresas na atualidade no desenvolvimento de aplicações WEB e Mobile. O Java foi criado em 1995 na empresa Sun Microsystem por uma equipe chefiada por James Gosling, conhecido como o pai do Java. Em 2008, o Java foi adquirido pela Oracle e vem crescendo bastante desde então no mercado de tecnologia
-- Springbot [4]:  O Spring Boot é um framework Java open source que tem como objetivo facilitar esse processo em aplicações Java. Consequentemente, ele traz mais agilidade para o processo de desenvolvimento, uma vez que devs conseguem reduzir o tempo gasto com as configurações iniciais.
-- Hibernate [5] : O Hibernate é um projeto open-source fundado por Gavin King e segue os passos do Spring em popularidade, conseguindo se tornar um dos frameworks mais usados para persistência de dados. A ideia deste framework é transformar o acesso a dados, em um banco de dados relacional, mais simples através da manipulação de objetos Java, deixando de lado as instruções SQL empregadas em operações de CRUD. O Hibernate possui uma rica documentação de introdução sobre como usá-lo disponível em vários idiomas, incluindo o Português. Atualmente, ele é encontrado na versão estável 3.6.8-Final, embora já haja a versão 4, ainda não considerada uma versão estável. Um dos fatores positivos do Spring Framework é a facilidade de integração entre ele e outros **frameworks Java, como o próprio Hibernate.**
-
-Percebam que é importante verificar a compatibilidade e a disponibilidade das tecnologias que serão usadas no projeto, no nosso projeto em questão adotamos apenas ferramentas open source e que possuem compatibilidade entre si,  nesse temos a garantia de um desenvolvimento com poucos problemas no processo de integração. 
-
-[3] [https://www.zup.com.br/blog/java](https://www.zup.com.br/blog/java)
-
-[4] [https://www.zup.com.br/blog/spring-boot](https://www.zup.com.br/blog/spring-boot)
-
-[5] [https://www.devmedia.com.br/como-integrar-os-frameworks-spring-e-hibernate/23414](https://www.devmedia.com.br/como-integrar-os-frameworks-spring-e-hibernate/23414)
-
-You can use the [editor on GitHub](https://github.com/jcarloslimaufc/VUP-challenge/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files. Test.
-
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/jcarloslimaufc/VUP-challenge/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+`<Clique aqui para próxima página>` : <https://jcarloslimaufc.github.io/VUP-challenge/page1>
