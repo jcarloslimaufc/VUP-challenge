@@ -1,19 +1,33 @@
 package br.com.jcarlos.restcomics.model;
 
 import java.io.Serializable;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
+@Entity
+@Table(name = "user")
 public class User implements Serializable {
 
-    private String nome;
-    private Long id;
-    private String cpf;
-    private String email;
-    private String dataNAscimento;
     private static final long serialVersionUID = 1L;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
-    public User() {
+    @Column(name = "nome", nullable = false, length = 80)
+    private String nome;
 
-    }
+    @Column(name = "cpf", nullable = false, length = 80)
+    private String cpf;
+
+    @Column(nullable = false, length = 100)
+    private String email;
+
+    @Column(name = "data_nascimento", nullable = false, length = 100)
+    private String dataNascimento;
 
     public String getNome() {
         return nome;
@@ -47,12 +61,12 @@ public class User implements Serializable {
         this.email = email;
     }
 
-    public String getDataNAscimento() {
-        return dataNAscimento;
+    public String getDataNascimento() {
+        return dataNascimento;
     }
 
-    public void setDataNAscimento(String dataNAscimento) {
-        this.dataNAscimento = dataNAscimento;
+    public void setDataNascimento(String dataNascimento) {
+        this.dataNascimento = dataNascimento;
     }
 
     @Override
@@ -60,7 +74,7 @@ public class User implements Serializable {
         final int prime = 31;
         int result = 1;
         result = prime * result + ((cpf == null) ? 0 : cpf.hashCode());
-        result = prime * result + ((dataNAscimento == null) ? 0 : dataNAscimento.hashCode());
+        result = prime * result + ((dataNascimento == null) ? 0 : dataNascimento.hashCode());
         result = prime * result + ((email == null) ? 0 : email.hashCode());
         result = prime * result + ((id == null) ? 0 : id.hashCode());
         result = prime * result + ((nome == null) ? 0 : nome.hashCode());
@@ -81,10 +95,10 @@ public class User implements Serializable {
                 return false;
         } else if (!cpf.equals(other.cpf))
             return false;
-        if (dataNAscimento == null) {
-            if (other.dataNAscimento != null)
+        if (dataNascimento == null) {
+            if (other.dataNascimento != null)
                 return false;
-        } else if (!dataNAscimento.equals(other.dataNAscimento))
+        } else if (!dataNascimento.equals(other.dataNascimento))
             return false;
         if (email == null) {
             if (other.email != null)
