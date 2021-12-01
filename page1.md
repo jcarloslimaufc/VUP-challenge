@@ -21,7 +21,8 @@ Percebam que é importante verificar a compatibilidade e a disponibilidade das t
 Todo código da nossa API vai estar disponibilizado em :
 ### https://github.com/jcarloslimaufc/VUP-challenge/tree/Dev
 
-=============
+---
+
 
 O primeiro passo vai ser criar a estrutura inicial do nosso projeto usando o Spring initialzr [6]. Aqui iremos definir as configurações iniciais da nossa aplicação usando o Spring framework, vamos adicionar uma dependência para construção de API's Web no padrão MVC. 
 
@@ -47,7 +48,8 @@ Uma das conversões que o Spring Boot adota é que ele reconhece como componente
 
 Ou seja, como a nossa classe está definida no pacote **br.com.jcarlos.restcomics**, qualquer classe definida nele ou em um “subpackage” dele, será reconhecida pelo Spring Boot. Desta forma, vamos definir a nossas entidades no pacote **br.com.jcarlos.restcomics.model**:
 
-=============
+---
+
 
 O segundo passo vai ser criar uma base de dados local com o Docker para facilitar a persistência de dados :
 
@@ -77,7 +79,8 @@ Também precisamos adicionar  duas dependências na configuração do projeto: J
 
 [10] [https://www.devmedia.com.br/guia/hibernate/38312](https://www.devmedia.com.br/guia/hibernate/38312)
 
-=============
+---
+
 
 O Terceiro passo vai ser criar nosso model para User
 
@@ -114,7 +117,8 @@ O interessante do uso do Hibernate JPA notations é que podemos já implementar 
 
 ![Untitled](page1%20b853eaf0215e4ea1b05d7758802de5e3/Untitled%208.png)
 
-=============
+---
+
 
 O quarto passo vai ser criar um pacote repository que vai atuar como a camada de persistência, dentro desse pacote iremos criar uma interface chamada **UserRepository**
 
@@ -132,7 +136,8 @@ Aqui na camada de service vamos aproveitar também para implementar um novo paco
 
 [16] [https://www.baeldung.com/spring-response-status-exception](https://www.baeldung.com/spring-response-status-exception)
 
-#############
+---
+
 
 O quinto passo é adicionar o pacote controller e a classe UserController que será a camada responsável tanto por receber requisições como por enviar a resposta ao usuário, a nossa classe controler irá utilizar aannotation ***@RestController*** no Spring MVC nada mais é do que uma combinação das annotations *@**Controller*** e ***@ResponseBody***. Essa annotation foi adicionada ao **Spring 4.0** para facilitar o desenvolvimento dos serviços ***RESTful*** com Framework Spring [17]. É nessa classe que iremos realizar o mapeamento de rotas da nossa API RequestMapping, dessa forma o controller irá receber solicitações do usuário, encaminha-las a camada de servise e Repository .
 
@@ -148,7 +153,8 @@ Algumas observações sobre essa classe
 
  [17] [https://medium.com/@gcbrandao/diferença-entre-restcontroller-e-controller-annotation-no-spring-mvc-e-rest-8533998a93eb](https://medium.com/@gcbrandao/diferen%C3%A7a-entre-restcontroller-e-controller-annotation-no-spring-mvc-e-rest-8533998a93eb)
 
-################
+---
+
 
 Pronto com esses componentes já podemos realizar o primeiro teste funcional da nossa API, para isso vamos verificar o nosso banco de dados Docker usando o PHPmyAdmin:
 
